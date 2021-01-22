@@ -53,6 +53,8 @@ sp-session = { default-features = false, version = '2.0.1' }
 sp-std = { default-features = false, version = '2.0.1' }
 sp-transaction-pool = { default-features = false, version = '2.0.1' }
 sp-version = { default-features = false, version = '2.0.1' }
+# Added pallet-did
+pallet-did = { git = 'https://github.com/substrate-developer-hub/pallet-did', default-features = false, version = '2.0.0' }
 
 [features]
 default = ['std']
@@ -93,4 +95,6 @@ std = [
     'sp-std/std',
     'sp-transaction-pool/std',
     'sp-version/std',
+# Added pallet-did
+    'pallet-did/std',
 ]
